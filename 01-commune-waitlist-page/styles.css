@@ -1,0 +1,198 @@
+body {
+    font-family: "Nunito", serif;
+    font-size: 18px;
+    background: #F6F9FE;
+    margin: 0 130px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    margin-bottom: 0px;
+}
+
+.navbar-desktop {
+    display: flex;
+}
+
+#hamburger-menu-icon {
+    display: none;
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-right: 24px;
+    color: #545454;
+}
+
+button {
+    background: #372865;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+    font-size: 18px;
+    font-family: "Nunito", serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#info {
+    background: #372865;
+    color: #CCC1E6;
+    margin-bottom: 0;
+    padding: 8px 36px 8px 24px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+span {
+    font-weight: 700;
+    text-decoration: 0.8px underline #CCC1E6;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    color: #353252;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+#intro {
+    color: #545454;
+    margin-top: 0;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 18px 24px;
+    width: 307px;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: #B6B6B6;
+    font-size: 18px;
+    font-family: "Nunito", serif;
+}
+
+::placeholder {
+    color: #B6B6B6;
+    opacity: 1;
+}
+
+.illustration {
+    width: 375px;
+    margin-left: 75px;
+}
+
+footer {
+    margin-top: 80px;
+    margin-bottom: 52px;
+}
+
+.footer-logo {
+    margin-right: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+@media (max-width: 540px) {
+    body {
+        text-align: center;
+        margin: 0 22px;
+    }
+
+    .flex {
+        margin-top: 30px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    input, .responsive-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+    body {
+        text-align: center;
+        margin: 0 72px;
+    }
+
+    .flex {
+        margin-top: 50px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    footer {
+        text-align: left;
+        margin-top: 36px;
+    }
+
+    input {
+        width: 55%;
+        margin-right: 3%;
+    }
+
+    .responsive-btn {
+        width: 40%;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1200px) {
+    input {
+        display: block;
+        width: 75%;
+        margin-bottom: 10px;
+    }
+
+    .responsive-btn {
+       display: block;
+       width: 75%;
+    }
+}
+
+
+@media (max-width: 990px) {
+    .navbar-desktop {
+        display: none;
+    }
+
+    #hamburger-menu-icon {
+        display: inline;
+    }
+}
